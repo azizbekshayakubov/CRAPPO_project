@@ -1,0 +1,195 @@
+.section {
+  background: #0d0d2b;
+  height: 1400px;
+
+  .section__boxs {
+    @include d-flex;
+    padding-top: 200px;
+
+    .section__box {
+      @include d-flex;
+
+      &-img {
+        margin-right: 24px;
+      }
+
+      &-text {
+        h1 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 150%;
+          color: #ffffff;
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 0.01em;
+          color: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  .crappos {
+    margin-top: 100px;
+    @include d-flex;
+    align-items: end;
+   
+
+    .crappos__left {
+      width: 650px;
+      height: 473px;
+    }
+
+    .crappos__right {
+      width: 40%;
+      h1 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        margin-bottom: 31px;
+      }
+
+      button {
+        @include btn;
+      }
+    }
+  }
+}
+
+.check {
+  margin-top: 200px;
+  position: relative;
+  
+
+  &__title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    width: 50%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #e0e0e0;
+    margin: 34px auto;
+  }
+}
+
+.check__input {
+  width: 70%;
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+     
+
+  .input {
+    margin-top: 10px;
+    padding: 18px;
+  }
+
+  label {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #0d0d2b;
+    padding: 0 195px 5px 2px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  select {
+    margin-left: 20px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #0d0d2b;
+    padding: 0 30px 5px 2px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-right: 35px;
+  }
+
+  button {
+    @include btn;
+  }
+
+  .check__text {
+      margin:80px 15px 24px;
+      
+    h2 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #3671e9;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      letter-spacing: 0.04em;
+      color: #0d0d2b;
+      margin-bottom: 4px;
+      span {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #3671e9;
+        margin-bottom: 80px;
+      }
+
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #828282;
+      }
+    }
+  }
+}

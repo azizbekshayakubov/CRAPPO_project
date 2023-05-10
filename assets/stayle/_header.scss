@@ -1,0 +1,141 @@
+.header {
+  background-color: #0d0d2b;
+  padding-top: 10px;
+
+  &__wrapper {
+    @include d-flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__left {
+    a {
+      width: 135px;
+      height: 40px;
+    }
+  }
+
+  &__list {
+    @include d-flex;
+    margin-right: 15px;
+    gap: 16px;
+    a {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #c4c4c4;
+      transition: all ease 0.3s;
+      &:hover {
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+
+  &__right {
+    nav {
+      border-right: 1px solid gray;
+    }
+
+    @include d-flex;
+    .header__btn {
+      @include btn;
+      margin-left: 15px;
+    }
+  }
+
+  .hero {
+    margin-top: 100px;
+    @include d-flex;
+
+    .hero__left {
+      width: 46%;
+      margin-top: 70px;
+      &-minititle {
+        width: 64%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 32px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        padding: 4px 3px;
+        margin-bottom: 24px;
+      }
+
+      &-span {
+        padding: 7px 10px;
+        background: #ffffff;
+        border-radius: 32px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #0d0d2b;
+        margin-right: 10px;
+      }
+
+      &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 76px;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+      &-subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        margin-bottom: 32px;
+      }
+
+      &-btn {
+        padding: 18px 71px 18px 11px;
+        background: #3671e9;
+        border-radius: 32px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          background-image: url("../images/icons/hero_up.svg");
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          display: block;
+          right: 15px;
+          top: 15px;
+        }
+      }
+    }
+
+    .hero__right {
+      .img {
+        width: 604px;
+        height: 585px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,533 @@
+
+.article {
+  background: linear-gradient(180deg, #f8f9fb 0%, #fafbff 100%);
+  margin-bottom: 80px;
+
+  .article__cards-title {
+    display: block;
+    margin: 0 auto;
+    padding-top: 280px;
+    width: 60%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: #0d0d2b;
+    margin-bottom: 32px;
+  }
+}
+
+.article__cards {
+  @include d-flex;
+  gap: 28px;
+  .article__card {
+    background: #ffffff;
+    box-shadow: 0px 40px 40px #391777;
+    border-radius: 16px;
+    text-align: center;
+    padding: 48px 10px;
+    img {
+      margin-bottom: 40px;
+    }
+
+    &:hover {
+      background: #2b076e;
+    }
+  }
+}
+
+.arcticle__card-content {
+  .btc {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: #0d0d2b;
+    margin-bottom: 16px;
+    position: relative;
+    &::before {
+      content: " BTC ";
+      display: block;
+      position: absolute;
+      right: 80px;
+      top: 10px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #bdbdbd;
+    }
+
+    &:hover {
+      color: #f8f9fb;
+    }
+  }
+
+  p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #828282;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .article__card-btn {
+    padding: 18px 71px 18px 11px;
+    background: #3671e9;
+    border-radius: 32px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      background-image: url("../images/icons/hero_up.svg");
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      display: block;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  .eth {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: #0d0d2b;
+    margin-bottom: 16px;
+    position: relative;
+    &::before {
+      content: " ETH ";
+      display: block;
+      position: absolute;
+      right: 85px;
+      top: 10px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #bdbdbd;
+    }
+
+    &:hover {
+      color: #f8f9fb;
+    }
+  }
+
+  .ltc {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: #0d0d2b;
+    margin-bottom: 16px;
+    position: relative;
+    &::before {
+      content: " BTC ";
+      display: block;
+      position: absolute;
+      right: 70px;
+      top: 10px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #bdbdbd;
+    }
+
+    &:hover {
+      color: #f8f9fb;
+    }
+  }
+}
+
+.market {
+  background: #2b076e;
+  &__title {
+    padding: 55px 0;
+    margin: 0 auto;
+    width: 60%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .invest {
+    @include d-flex;
+    padding-bottom: 70px;
+
+    .invest__left {
+      padding: 30px;
+      width: 38%;
+
+      &-title {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+
+      &-subtitle {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #e0e0e0;
+        margin-bottom: 32px;
+      }
+
+      &-btn {
+        @include btn;
+      }
+    }
+
+    .invest__right {
+      width: 580px;
+      height: 427px;
+    }
+  }
+}
+
+.detailed {
+  @include d-flex;
+  padding-bottom: 120px;
+
+  &__left {
+    img {
+      width: 680px;
+      height: 430px;
+    }
+  }
+
+  &__right {
+    margin-left: 45px;
+    padding: 20px;
+    h1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      color: #ffffff;
+      margin-bottom: 24px;
+      padding-top: 50px;
+    }
+
+    p {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    button {
+      @include btn;
+    }
+  }
+}
+
+.track {
+  @include d-flex;
+  padding-bottom: 100px;
+
+  .track__left {
+    width: 35%;
+
+    &-title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    &-subtitle {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      @include btn;
+    }
+  }
+
+  .track__right {
+    border-radius: 16px;
+    background: #35068c;
+    width: 50%;
+    .track__right-content {
+      margin-top: 40px;
+
+      .cripta {
+        @include d-flex;
+        align-items: center;
+
+        padding: 16px 14px;
+
+        img {
+          width: 100px;
+          height: 45px;
+        }
+
+        .btc1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #f2f2f2;
+          margin: 0 15px;
+          position: relative;
+          &::after {
+            content: " Price ";
+            display: block;
+            position: absolute;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            top: -35px;
+          }
+        }
+
+        .btc2 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #8fffbe;
+          margin: 0 15px;
+          position: relative;
+          &::after {
+            content: " Change ";
+            display: block;
+            position: absolute;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            top: -35px;
+          }
+        }
+        .btc3 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #f2f2f2;
+          margin: 0 15px;
+          position: relative;
+          &::after {
+            content: "Volume(24h)";
+            display: block;
+            position: absolute;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            top: -35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cripta-eth {
+  @include d-flex;
+  align-items: center;
+  background: #4610ad;
+  border-radius: 16px;
+  padding: 10px 5px;
+  position: relative;
+  right: 40px;
+
+  img {
+    width: 100px;
+    height: 45px;
+  }
+
+  .eth1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f2f2f2;
+  }
+
+  .eth2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ff7676;
+  }
+
+  .eth3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f2f2f2;
+  }
+}
+
+.ltc1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f2f2f2;
+}
+.ltc2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8fffbe;
+}
+
+.ltc3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f2f2f2;
+}
+
+.minig__wrapper{
+  background-color: #2b076e;
+  height: 300px;
+}
+
+.mining {
+  @include d-flex;
+  background: #3671e9;
+  border-radius: 16px;
+  padding: 48px;
+  padding-bottom: 40px;
+
+  &__left {
+     
+     width: 35%;
+
+    h1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    p{
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+
+    }
+  }
+
+  &__right{
+      margin: 50px 30px;
+    input {
+      padding: 5px 60px 7px 1px;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      background-color: #3671e9; 
+
+      placeholder {
+        color: #FFFFFF;
+      }
+    }
+
+    .email-btn{
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 14px 32px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color:#0D0D2B;
+      border: none;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    
+  }
+}
